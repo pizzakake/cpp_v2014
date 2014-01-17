@@ -1,5 +1,9 @@
 #NYHETER
 
+**17.01.2014**
+
+Forelesningsnotater fra i dag, og en hel del nye oppgaver er nå lagt ut. Jeg håper så mange som mulig kan løse en del av (eller alle) oppgavene til onsdag, slik at jeg da kan gå igjennom noen av dem!
+
 **09.01.2014**
 
 Minner om at det *ikke er forelesning i morgen*, fredag 10.01. Dette ble informert om i første forelesning mandag, og står i forelesningsnotatene (f1). Fra og med neste uke er det forelesning/lab, hver onsdag fra 08:30 - 12:15, og ordinær forelesning hver fredag, fra 08:30 - 10:15. Vi sees på onsdag - flere oppgaver kommer før det, i mellomtiden:
