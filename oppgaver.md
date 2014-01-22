@@ -6,8 +6,8 @@ Oppgaver, C++ 2014
      * Lag to pekere, `int* iptr` og `char* cptr`. Hvor store blir disse? Skriv ut størrelsen på disse også, med sizeof.
      * Skriv nå ut innholdet i alle variablene. Hva er de? Forsøk å flytte alle variablene hhv. inn i og ut av main. Endrer dette verdiene? PS: Legg merke til at utskrift av `char*` kanskje har litt uventet oppførsel. Dette er fordi en char-pointer er det samme som en string i C (mer om dette under). Kan du forklare oppførselen? Hvis den skaper problemer, kommentér den ut, i resten av denne deloppgaven.
      * Forsøk konvertere implisitt, fra hhv. `float` til `int`, `char` til `int` og `int` til `char`. Legg merke til hvor du får feilmeldinger. Har feilmeldingene noe med størrelsen på objektene å gjøre?
-     * Lag en funksjon `void print_ascii_table()` som skriver ut hele ascii-tabellen. Dette gjør du ved å lage en for-løkke som itererer over alle mulige verdier av char (0-255), konverterer den til int og skriver den ut. Det er lurt å skrive ut et anførselstegn rett før og rett etter tegnet, slik at det blir tydelig hvilke tegn som er "tomme".
-     * Lag en funksjon `int valcount()`
+     * Lag en funksjon `void print_ascii_table()` som skriver ut hele ascii-tabellen. Dette gjør du ved å lage en for-løkke som itererer over alle mulige verdier av char (0-255), konverterer den til hhv. både char og  int og skriver ut nummeret på tegnet, et kolon, og selve tegnet. (Feks. `65: 'A'`). Det er lurt å skrive ut et anførselstegn rett før og rett etter tegnet, slik at det blir tydelig hvilke tegn som er "tomme".
+
   2. **Arrayer og c_string**  
      * Opprett to funksjoner, hhv. `void stackmess()` og `void int_arr()`. Funksjonen `stackmess` skal opprette tre arrayer, á 20 int'er (`int arrx[20]`), og fylle disse tre med tilfeldige tall, via en løkke (`arrx[i]=rand()`). Funksjonen `int_arr` skal opprette et nytt array, med 20 int'er, uten å initialisere, og så skrive ut innholdet i arrayet. 
         * La main kalle `int_arr`. Hva skrives ut? Blir det noen forskjell hver gang du kjører programmet? 
