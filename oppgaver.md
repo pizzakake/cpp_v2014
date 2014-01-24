@@ -1,5 +1,7 @@
 Oppgaver, C++ 2014
 ===========================
+
+
 ## Uke 3-4: Datatyper
   1. **Innebygde (primitive) typer**
      * I et nytt program med kun `main`, opprett  følgende variabler: `float f`, `int i`, `char c`, `double d` - uten å initialisere. Bruk funksjonen `sizeof(x)` til å skrive ut størrelsen på alle sammen.      
