@@ -3,6 +3,8 @@
 using namespace std;
 
 
+const int i_glob=42;
+const int* const j_glob=&i_glob;
 
 
 int main(){
@@ -12,6 +14,13 @@ int main(){
   cout << *j << endl;
   cout << i << endl;
   
+  /*
+    Hva skjer her?
+   */
+  int* i_glob_ptr=(int*)(&i_glob);
+  (*i_glob_ptr)=43;
+    
+
   /*
     Hva skjer her???
    */
