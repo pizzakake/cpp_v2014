@@ -1,6 +1,37 @@
 Oppgaver, C++ 2014
 ===========================
 
+## Uke 5: Minne
+
+  1. **Automatisk minne og stack**
+     * Undersøk hvor mye plass din maskin setter av til stack.
+        1. Se hvor "høyt" du kan gå, ved å lage en rekursiv funksjon `void stackmess(int i)` som kaller seg selv i ganger, før den returnerer. Funksjonen bør lagre en byte på stack før den kaller seg selv på nytt. Kall `stackmess` fra en for-løkke, der du øker "høyden" inkrementellt, og skriver ut høyden dersom det ble vellykket, frem til du får segfault.
+        2. Se hvor stort array du kan allokere på stack.
+        3. Sammenlikne høyden på rekursjonen, og størrelsen på arrayet. Forsøk å beskriv hva som er sammenhengen mellom disse tallene
+    * Lag en funksjon `int* throw()`som skriver lagrer tallet 42 (meningen med livet) 1000 words (32/64 bit) opp i stacken. Returner en peker til dette tallet. Adressen til tallet, og tallet skal skrives ut når den returnerer.. 
+    * Lag en ny funksjon, `int* fetch()` som reiser 1000 words oppover i stacken, leser av det den finner der, og skriver det ut, sammen med adressen. Får du `fetch` til å finne igjen tallet? Hvis ikke er det noen som har lurt på hvorfor, før deg. Les denne posten: [Why doesn't the C++ default destructor destroy my objects?](http://stackoverflow.com/questions/2403020/why-doesnt-the-c-default-destructor-destroy-my-objects). Hintet er at C++ garanterer at alle variable har en default "destructor" (vi kan lage egne for klasser), og at denne kalles når variablen går ut av skop. For en peker garanteres det dermed også at destructor kalles, men hva med det som pekes på? 
+       * Du får naturligvis lov til å bruke pekere i både `throw` og `fetch`. Du kan også bruke litt farlig (gøy) pekeraritmetikk, når du legger tallet på stack, og når du henter det - det er ikke nødvendig at det ligger nøyaktig på "plass 1000"
+    * Når du har fått til `throw` og `fetch`, kjør `stackmess` imellom, og se om du klarer å ødelegge for `catch`.
+
+  2. **Statisk minne** 
+     * Initialisér et array på 10 MB hhv. utenfor og innenfor main. Lag en løkke som sorterer innholdet i arrayet, med [std::sort](http://www.cplusplus.com/reference/algorithm/sort/). Ta tiden:  ser du noen forskjell i hastighet? Hvorfor?
+     * Hvordan kunne du gått rem for å endre størrelsen på dette arrayet etter at programmet har startet? Hvis du har idéer til hvordan det kan gjøres, prøv!
+     * Implementér nøyaktig det samme som over, men denne gangen med en vector. Får du noen forskjell i hastighet? 
+
+  3. **Dynamisk minne (Heap/Free store)**
+     * Gjenta eksperimentet fra oppgave 2, som tester hastigheten av sort. Denne gangen, forsøk å sortere et array som ligger allokert på "free store". OBS: Hele arrayet skal ligge på free store, og det er da nødvendig å bruke `new arr[n]`. Før du måler hastigheten, dealloker minnet med `delete arr`. Får du minnelekkasje? Mål deretter hastigheten og redegjør for sammenhengen med hastigheten i de to eksperimentene fra oppgave 2.
+     * Lag en kontrollert minnelekkasje, der du forsøker å miste nøyaktig 10 000 bytes, fordelt på 2 500 allokeringer. Bruk valgrind til å verifisere lekkasjen.
+     * Lag en heftig minnelekkasje! Dette må du gjøre på din egen maskin (hvis du tør). Forsøk å lage et program som spiser alt det minnet det kan få. Hvor mye får det før du ikke tør å la det kjøre lenger? Merker du noen effekt på systemet? **OBS:** dette må du **IKKE** gjøre på studssh - der er det mange som deler ressursene!
+     * **Hvem har ansvar for deallokering?** Lag to funksjoner, `int* create_arr(n)` som oppretter et array av størrelse `n` på "free store" og returnerer en peker dit. Lag en ny funksjon, `void fill_random(int arrsize, int* n)` som fyller arrayet med tilfeldige tall. Lag en tredje funksjon `float average(int arrsize, int* n) som regner ut gjennomsnittet av innholdet i arrayet. Lag en fjerde funkson `float random_average(n)` som kun tar et tall n som input, og bruker de tre foregående funksjonene til å finne ut hva gjennomsnittsverdien av randomfunksjonen er, ved en git `n`. La nå main kjøre en løkke over økende `n` og skrive ut gjennomsnittene. Redegjør for hvor det er riktig å deallokere her. Finnes det alternativer? Er det andre måter å lage disse funksjonene der denne avgjørelsen blir enklere?
+
+  4. **Structer**
+     * Lag en kompositt type `struct student{...}`, med felter for navn, alder, studentnummer, evt. andre ting. Bruk passende datatyper. 
+       * Verifisér at du klarer å opprette studenter og gi dem navn og alder, for så å skrive ut disse verdiene. 
+       * Lag en funksjon `print_student(student s)` for å skrive ut innholdet av et studentobjekt på en pen måte.
+       * Lag en ny struct, `struct student_container{...}` som inneholder et array av 100 studenter (ikke bruk pekere). Lag så en funksjon `student_container create_students(n)` som generer et student_container-objekt, fylt med tilfeldig genererte studenter. (Navnene kan du generere tilfeldig fra en liste av 10-20 for- og etternavn, de andre verdiene kan du også sette tilfeldig, eller bare i rekkefølge, for feks. studentnummer). Kjør funksjonen `create_students(n)` 1000 ganger og ta tiden. Hva skjer? 
+       * Lag en ny funksjon, `student_container* create_students(n)`. Her skal hvert studentobjekt, og også selve containeren, ligge i "free store". Kjør funksjonen 1000 ganer og ta tiden på nytt. Noen forskjell? Har vi nå fått en bedre løsning? Forklar fordeler og ulemper. Sjekk implementasjonen i valgrind el. for å finne, og fikse eventuelle lekkasjer.
+       * Lag en ny funksjon i to versjoner, `void sort_students(student_container)` og `void sort_students(&student_container). Tilbake i løkken som kjører `student_container create_students(n)`, sortér også studentobjektene etter alder, 
+
 
 ## Uke 3-4: Datatyper
   1. **Innebygde (primitive) typer**
