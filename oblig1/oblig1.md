@@ -1,4 +1,3 @@
-
 Obligatorisk oppgave 1
 ========================================
 
@@ -13,7 +12,7 @@ Obligatorisk oppgave 1
 
 **Generelle retningslinjer:**
 
-  * Det er lov å snakke med hverandre om løsningen, men det å dele kode med andre, på noen som helst måte, blir betraktet som juks. Det er du alene som skal skrive koden, og du skal kunne redegjøre for innholdet.
+  * Det er lov å snakke med hverandre om løsningen, men det å dele kode med andre, på noen som helst måte, blir betraktet som juks. Oppgaven er **individuell** så det er du alene som skal skrive koden, og du skal kunne redegjøre for innholdet.
   * Spesielt er det viktig at ingen åpner sitt github-repository for noen andre enn meg (alfred-bratterud)
   * Manglende innlevering gjør at man mister muligheten til å få karakter i kurset, med mindre man har *fått innvilget utsettelse før fristen.* 
   * Man vil få tilbakemelding på det man har gjort, og kan da evt. få beskjed om ting som må endres, for at oppgaven skal bli godkjent. Endringer må være levert innen 2 uker fra varsel.
