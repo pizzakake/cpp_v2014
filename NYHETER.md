@@ -1,5 +1,12 @@
 #NYHETER
 
+**03.02.2014**
+
+  * Forelesningsnotater fra forelesning 3 og 4 er lagt ut, med kodeeksempler fra f.4.
+  * Obligen er også ute - minner om at:
+    * Obligen er **Individuell**
+    * Obligen skal leveres via et privat github-repo som kun du og jeg (alfred-bratterud) har tilgang til.
+
 **17.01.2014**
 
 Forelesningsnotater fra i dag, og en hel del nye oppgaver er nå lagt ut. Jeg håper så mange som mulig kan løse en del av (eller alle) oppgavene til onsdag, slik at jeg da kan gå igjennom noen av dem!
