@@ -1,6 +1,31 @@
 Oppgaver, C++ 2014
 ===========================
 
+## Uke 6: Objektorientert programmering
+   1. **Konstruktorer og initialisering:** 
+
+      Lag en klasse, `computer` med medlemmene `float cpu_freq`, `float mem_size`, `float disk_size`, `string model`, `int usb_ports` og `char* manufacturer`, for hhv. Cpu-frekvens, minne- og diskstørrelse, midellnavn fra produsent (feks. `Latitude 2410` eller `MacBook Pro`) og produsent (Feks. `Dell`, `Samsung` etc.). 
+
+      * Lag en `public` medlemsfunksjon `string to_string()`, som lager en string med sammendrag av samtlige medlemmer, egnet for utskrift. Uten å lage konstruktorer, instansier et par objekter av denne klassen i `main`, og skriv ut resultatet av `to_string()`. Har medlemmene blitt initialisert? Forsøk å instansiere utenfor main. Får du det til? Hva blir resultatet av `to_string()`?
+      * Lag en konstruktor, som ikke tar noen argumenter. I konstruktorens kropp, bruk tilordning for å sette verdi til alle medlemmene (feks. `cpu_freq=2.4`). Kall `to_string()` hhv. *før* og *etter* tilordningene. Er det mulig å skrive ut innholdet før du satte verdier til dem? I så fall, hvorfor er det mulig og hva sier det om initalisering?
+      * Instansier en `computer` med og uten konstruktorsyntaks i main (tomme parenteser når du oppretter variablen). Blir det noen forskjell på utskriften? Klarer du å gjenskape en situasjon der instansiering ser identisk ut som en funksjonssignatur? Dette heter [most vexing parse](http://en.wikipedia.org/wiki/Most_vexing_parse) og er et nyttig tilfelle å vite om, slik at du kan gjøre det riktig.
+      * Bruk C++ sin spesielle initialiseringssyntaks for å initialisere alle medlemmene, men la tilordningene stå. Blir utskriften som forventet nå?
+      * Ser du noen tilfeller der tilordning i konstruktorkroppen er *nødvendig* (det finnes noen)? Beskriv dem, og implementér den enkleste du kommer på (du kan gjerne legge til flere medlemmer om nødvendig).
+      * Noen mengder inneholder seg selv. Hva hvis en `computer` kunne inneholde en `computer`? (Mange datamaskiner er virtuelle) Forsøk å få til å ha et computer-objekt som medlem. Pekere og referanser er lov:-)
+      * Lag en ny klasse, `computer_manufacturer` og endre medlemmet `manufacturer` i `computer` til å være av denne typen. Lag en annen klasse, `country` og la begge klassene få en konstruktor, som skriver ut en beskjed om at den blir konstruert. 
+      * Gi `computer_manufacturer` et medlem `country` og gi begge disse klassene ha et medlem `string name`, som skal bli initialisert av konstruktor, som tar en `string` som argument. Oppdater også `computer` med en konstruktor slik at man kan initialisere med et produsentobjekt. 
+      * For alle tilfellene over, sjekk når disse konstruktorene blir kalt. Du må også legge til en `to_string()`-metode i de nye klassene, for å få til utskrift. 
+
+   2. **Destructorer:**
+
+      * Legg til destructorer i alle klassene over. Destructorene skal foreløpig bare skrive ut sitt eget navn. 
+      * Instansier en `computer` "i dynamisk minne / free store", med `new`. Få konstruktorene til å kalles, ved å eksplisitt slette elementet.
+      * Lag en funksjon `test_destructors` som oppretter en vector med ti ulike `computer`-objekter, og returnerer. Vectoren skal ligge på stack. Blir construcorene og destruktorene kalt? Hvorfor/hvorfor ikke?
+      * La funksjonen `test_destructors` inneholde et array av pekere til ti ulike `computer-objekter`, som alle skal ligge i `free store`. Blir destructorene til disse kalt? Hva er forskjellen? Sjekk for minnelekkasjer med valgrind.
+      * Lag enda et array, som over, men fyll i stedet inn faktiske `computer`-instanser. Blir destructore kalt nå? 
+      * Endre vectoren og arrayet av pekere, slik at pekerne til computerobjekter (og objektene) blir laget før vectoren. Fyll deretter inn disse objektene i vectoren. Lag en setter-metode som lar deg endre ett av medlemmene, og endre noen av medlemmene i vector, og noen i arrayet. Er det de samme objektene? 
+      * Gjør som over, men endre vectoren til å være en vector av pekere til computerobjekter. Er det nå de samme objektene? 
+
 ## Uke 5: Minne
 
   1. **Automatisk minne og stack**
