@@ -57,6 +57,7 @@ Oppgaver, C++ 2014
        * Lag en ny funksjon, `student_container* create_students(n)`. Her skal hvert studentobjekt, og også selve containeren, ligge i "free store". Kjør funksjonen 1000 ganer og ta tiden på nytt. Noen forskjell? Har vi nå fått en bedre løsning? Forklar fordeler og ulemper. Sjekk implementasjonen i valgrind el. for å finne, og fikse eventuelle lekkasjer.
        * Lag en ny funksjon i to versjoner, `void sort_students(student_container)` og `void sort_students(&student_container). Tilbake i løkken som kjører `student_container create_students(n)`, sortér også studentobjektene etter alder, 
 
+*Flere oppgaver:* Oppgavene i kap.27 - disse gir deg kjennskap til mange problemstillinger rundt C-strenger.
 
 ## Uke 3-4: Datatyper
   1. **Innebygde (primitive) typer**
