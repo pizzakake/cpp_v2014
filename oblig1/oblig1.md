@@ -5,9 +5,9 @@ Obligatorisk oppgave 1
 
 **Innlevering:** 
 
-  * En mappe kalt "oblig1" må ligge i ditt private github-repository, der kun du og jeg (`alfred-bratterud`) har tilgang, innen **06.02.2013 kl.23:59**. Mappen kan være tom, men må legges ut 1 uke før den endelige fristen, for at jeg skal kunne sjekke at alle er med, og på github.
+  * En mappe kalt "oblig1" må ligge i ditt private github-repository, der kun du og jeg (`alfred-bratterud`) har tilgang, innen **06.02.2014 kl.23:59**. Mappen kan være tom, men må legges ut 1 uke før den endelige fristen, for at jeg skal kunne sjekke at alle er med, og på github.
   * Link til ditt private github-repository må være levert inn i Fronter, innen dette tidspunktet.
-  * De ferdige `.cpp`-filene må ligge i den samme mappen på github inen **13.02.2013 kl.23:59**
+  * De ferdige `.cpp`-filene må ligge i den samme mappen på github inen **14.02.2014 kl.23:59**
   * Det er to oppgaver, der **begge** skal løses. Nøttene i oppgave 1 er frivillige og kan droppes. Konkurransen i oppgave 2 må alle levere inn et `verdig forsøk` til, uten alvorlige feil, men den trenger ikke være perfekt.
 
 **Generelle retningslinjer:**
