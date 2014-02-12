@@ -1,5 +1,11 @@
 #NYHETER
 
+**12.02.2014**
+
+**Kun lab i dag**. Jeg har blitt smittet av datteren min som var syk hele forrige uke, så jeg holder meg hjemme. Det blir derfor kun lab i dag. Stud. ass. kommer som normalt, og vil hjelpe dere. Dersom dere fremdeles har spørsmål etter lab'en, ta kontakt på e-post så skal jeg forsøke å hjelpe så godt jeg kan. Kodeeksempler fra fredagens forelesning blir lagt ut, og gjennomgått senere. 
+
+Satser på at vi sees på fredag - Lykke til!
+
 **03.02.2014**
 
   * Forelesningsnotater fra forelesning 3 og 4 er lagt ut, med kodeeksempler fra f.4.
