@@ -1,5 +1,9 @@
 #NYHETER
 
+**16.02.2014**
+
+**Undervisningsfri denne uken**. I henhold til [semesterplanen](http://www.hioa.no/Studier/TKD/Undervisnings-og-semesterplaner/Semesterplan-tekniske-studier-2013-2014) for dette semesteret er det undervisningsfri denne uken. Jeg anbefaler alle å jobbe med de oppgavene som er lagt ut, og de det er referert til fra boken. Flere oppgaver og kodeeksempler kommer, så følg med og hold C++ ved like. Vi sees onsdag 26.februar!
+
 **12.02.2014**
 
 **Kun lab i dag**. Jeg har blitt smittet av datteren min som var syk hele forrige uke, så jeg holder meg hjemme. Det blir derfor kun lab i dag. Stud. ass. kommer som normalt, og vil hjelpe dere. Dersom dere fremdeles har spørsmål etter lab'en, ta kontakt på e-post så skal jeg forsøke å hjelpe så godt jeg kan. Kodeeksempler fra fredagens forelesning blir lagt ut, og gjennomgått senere. 
