@@ -1,5 +1,15 @@
 #NYHETER
 
+**21.02.2014: VIKTIG - Status Oblig 1**
+
+Alle som har levert oblig 1 på godkjent måte skal nå ha fått en fil lastet opp til sitt github-repo. Filen heter `studnr_sxxxxxx` og inneholder bare en setning om at obligen er bekreftet mottatt. **Alle må nå:**
+  * Sjekke at riktig studentnummer er skrevet inn. De er lagt inn atuomatisk, men basert på en manuell sjekk, på grunn av begrensninger i fronter. 
+  * Dersom filen er kommet inn med riktig nummer, kan du slappe av og fortsette med oppgaver (dere gjør vel ikke annet?)
+  * Dersom filen er kommet inn med *feil studentnummer* eller dersom du mener å ha levert obligen, men *ikke har fått noen fil*, [send meg e-post ASAP](mailto:alfred.bratterud@hioa.no)
+  * Tilbakemeldinger på oblig1 kommer så snart de er klare, og vil bli pushet opp til ditt repo.
+  
+Vi sees på onsdag!
+
 **16.02.2014**
 
 **Undervisningsfri denne uken**. I henhold til [semesterplanen](http://www.hioa.no/Studier/TKD/Undervisnings-og-semesterplaner/Semesterplan-tekniske-studier-2013-2014) for dette semesteret er det undervisningsfri denne uken. Jeg anbefaler alle å jobbe med de oppgavene som er lagt ut, og de det er referert til fra boken. Flere oppgaver og kodeeksempler kommer, så følg med og hold C++ ved like. Vi sees onsdag 26.februar!
