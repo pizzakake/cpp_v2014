@@ -1,6 +1,28 @@
 Oppgaver, C++ 2014
 ===========================
 
+## Uke 8: Arv, exceptions og operatoroverlasting
+Du skal lage et lite system for å registrere brukere "på en nettbutikk". Du skal ikke lage noe web-grensesnitt, eller bruke nettverket, bare ta imot input fra brukeren via terminal. 
+
+  1. **Arv, intro**: Systemet skal støtte to typer brukere; sluttkunder og leverandører. Du skal lage en klasse for hver, "consumer" og "supplier", som begge arver en mer generell klasse "user". Klassen `user` skal ha feltene `firstName`, `lastName`, `email`, `phone`, der alt utenom `phone` er obligatoriske felter. Klassen `consumer` skal ha feltene `org_no` som er et numerisk organisasjonsnummer og `discount`, som er en fast prosentsats, som i utgangspunktet settes til `5.0`. 
+    * Lag klassene og opprett 2 ulike brukere av hver type
+    * Overlaste strømoperatoren for alle klassene slik at du kan skrive dem ut direkte slik: `cout << user1 << endl`
+    * Lag en vector for hver subklasse, og legg inn de to elementene. Lag en funksjon `userlist` som skriver ut alle.
+
+  2. **Arv og exceptions**: Lag et registreringsbilde (bare en løke som venter på input fra `cin`) der man kan registrere seg. Dette skal ligge i en funksjon `user register()`, som returnerer en bruker, dersom registreringen var vellykket.
+    * Det første systemet skal be om er om du vil opprette en `supplier` eller en `consumer`. Brukeren må da skrive inn dette som ren tekst. Dersom brukeren skriver noe annet skal det kastes en exception
+    * Lag nå "form validation"; utvide systemet slik at det kastes egne exceptions for følgende: 
+      * navn som inneholder noe annet en bokstaver, 
+      * e-post som ikke inneholder minst en bokstav, fulgt av alfakrøll, fulgt av minst to bokstaver, så et punktum så minst to bokstaver
+      * Organisasjonsnummer som ikke er numerisk (ta det imot som en string)
+      * Telefonnummer som ikke er 8 siffer (ta det også imot som en string)
+    * Lag en egen catch-clause for hver av disse
+    * Dersom noe annet går galt, feks. at prosentsatsen er høyere enn 100, skal det kastes en stekepanne (en klasse fryingPan, med valgfritt innhold). Denne skal også fanges.
+    * Til slutt, lag en generell catch-clause som fanger alle typer objekter.
+    * Endre nå oppførsel i systemt slik at det *blir* opprettet en bruker, selv om telefonnummeret er feil, da bare uten telfonnummer. Dette gjøres når du fanger exception av typen som indikerer galt telefonnummer. For andre typer exceptions skal det bare skrives ut beskjed om at brukeren ikke ble opprettet.
+    * Til sist i programmet skal listen av brukere skrives ut.
+
+
 ## Uke 6: Objektorientert programmering
    1. **Konstruktorer og initialisering:** 
 
