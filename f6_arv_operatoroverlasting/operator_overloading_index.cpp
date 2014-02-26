@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+class int_pair{
+  int left;
+  int right;
+public:
+  int_pair(int l,int r):
+    left(l),right(r){}
+  int operator[](unsigned int i){
+    if(i==0)
+      return left;
+    return right;
+  }
+};
+
+int main(){
+  int_pair p1(1,42);
+  cout << p1[0] << endl;
+  cout << p1[985] << endl;
+}
