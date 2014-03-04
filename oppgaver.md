@@ -1,7 +1,10 @@
 Oppgaver, C++ 2014
 ===========================
+## Uke 10: Arv og polymorfi. 
+Oppgaver og drill fra boken, kap. 14. Disse oppgavene bruker grafikkbiblioteket fra [fltk.org](http://www.fltk.org). Biblioteket fungerer for Mac, Windows og Linux, men må lastes ned fra hjemmesidene. For windows/visual studio står det en brukerveiledning i et eget appendix i boken (Appenix D s.1157), mens for Linux og Mac, må du bruke dokumentasjonen på hjemmesidene. Det er alltid litt knot å installere tredjeparts kode - og i seg selv er det en *svært nyttig* øvelse. 
+Bruk av dette biblioteket vil også være nyttig for å ha noe å sammenlikne med når vi senere skal bruke Qt, som fungerer svært anderledes. 
 
-## Uke 8: Arv, exceptions og operatoroverlasting
+## Uke 8-9: Arv, exceptions og operatoroverlasting
 Du skal lage et lite system for å registrere brukere "på en nettbutikk". Du skal ikke lage noe web-grensesnitt, eller bruke nettverket, bare ta imot input fra brukeren via terminal. 
 
   1. **Arv, intro**: Systemet skal støtte to typer brukere; sluttkunder og leverandører. Du skal lage en klasse for hver, "consumer" og "supplier", som begge arver en mer generell klasse "user". Klassen `user` skal ha feltene `firstName`, `lastName`, `email`, `phone`, der alt utenom `phone` er obligatoriske felter. Klassen `consumer` skal ha feltene `org_no` som er et numerisk organisasjonsnummer og `discount`, som er en fast prosentsats, som i utgangspunktet settes til `5.0`. 
