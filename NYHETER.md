@@ -1,5 +1,15 @@
 #NYHETER
 
+**04.03.2014: Lab i morgen**
+
+Det viser seg at det er del som må gjøre mer med oblig 1. I tillegg har jeg hjemmeeksamen til i morgen kl.12, så vi utsetter gjennomgang av oblig enda en uke. Da vil dere også ha mottatt kommentarer fra rettingen og ha fått utdelt Oblig 2. I morgen legger vi opp til at dere jobber med oppgaver i arv og polymorfi (lagt ut), som vil være svært viktig å ha kontroll på i oblig 2. Jeg kommer ikke til å være der, men Alf Walla kommer kl.08:30 og vil hjelpe dere. 
+
+Oppgavene bruker et grafikkbibliotek som fungerer for de tre store platformene (Windows, Mac, Linux) og vil gi dere muligheten til å teste grafikkprogrammering i C++. Dette kan være et nyttig hjelpemiddel i programmeringen og jeg anbefaler på det sterkeste at dere dukker opp, gjør oppgaver og spør Alf straks dere står fast. 
+
+PS: Fint om så mange som mulig tar med boken, slik at de som ikke har kan låne.
+
+Lykke til - vi sees på fredag!
+
 **21.02.2014: VIKTIG - Status Oblig 1**
 
 Alle som har levert oblig 1 på godkjent måte skal nå ha fått en fil lastet opp til sitt github-repo. Filen heter `studnr_sxxxxxx` og inneholder bare en setning om at obligen er bekreftet mottatt. **Alle må nå:**
