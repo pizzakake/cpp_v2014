@@ -1,5 +1,9 @@
 #NYHETER
 
+**07.03.2014: Forelesning avlyst i dag**
+
+Dagens forelesningen er dessverre avlyst pga. sykdom. 
+
 **04.03.2014: Lab i morgen**
 
 Det viser seg at det er del som må gjøre mer med oblig 1. I tillegg har jeg hjemmeeksamen til i morgen kl.12, så vi utsetter gjennomgang av oblig enda en uke. Da vil dere også ha mottatt kommentarer fra rettingen og ha fått utdelt Oblig 2. I morgen legger vi opp til at dere jobber med oppgaver i arv og polymorfi (lagt ut), som vil være svært viktig å ha kontroll på i oblig 2. Jeg kommer ikke til å være der, men Alf Walla kommer kl.08:30 og vil hjelpe dere. 
