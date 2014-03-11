@@ -1,5 +1,16 @@
 #NYHETER
 
+**11.03.2014: Lab i morgen og oblig 2**
+
+I følge semesterplanen kommer Oblig2 ut på fredag. Oppgaven vil være å lage fyrverkeri. Dere vil få utdelt header-filer til et lite klassehierarki, der dere skal lage implementasjonen. Fyrverkeriet dere skal ende opp med vil se ut ca. [sånn som dette](https://www.dropbox.com/s/shw2mqbf2qbjn03/fireworks1.mov). 
+  * Oppgaven skal løses med grafikkbiblioteket FLTK. Lab'en i morgen vil derfor igjen handle om FLTK, og Alf vil være til stede og hjelpe dere (jeg har nok en deleksamen). Jeg legger ut noen oppgaver som går ut på at dere skal forsøke å lage fyrverkeri allerede nå. 
+  * Til oblig2 vil dere måtte implementere løsningen dere får utdelt, men det vil være en stor fordel å ha prøvd litt på egenhånd først. 
+  * I tillegg til implementasjonen vil dere bli bedt om å identifisere noen styrker og svakheter i designet (det er med vilje ikke perfekt) og foreslå alternativer på ulike punkter. Det vil da være nødvendig at dere har kontroll på arv, polymorfi og abstrakte klasser. Oppgavene fra boken som ble lagt ut forrige uke vil være nyttige her.
+
+**PS:** Dere gikk glipp av en forelesning om templates på fredag. Dersom jeg ikke rekker å dekke dette på fredag vil bli gjort tilgjengelig senere, som videoforelesning; dere trenger ikke kunne dette for å løse oblig2.
+
+Lykke til i morgen - vi sees på fredag!
+
 **07.03.2014: Forelesning avlyst i dag**
 
 Dagens forelesningen er dessverre avlyst pga. sykdom. 
