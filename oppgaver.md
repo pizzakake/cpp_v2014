@@ -13,6 +13,7 @@ Oblig2 vil gå ut på å implementere fyrverkeri, basert på et klassehierarki d
     * Helt rødt, grønt eller blått
     * Alle dotter har ulike, men kun "sterke farger"
     * Alle dotter har ulike farger, men "mest rødt", "mest lilla", "mest gult" etc.
+  * Forsøk å få dottene til å få gradvis svakere farge, etter hvert som de beveger seg vekk fra utgangspunktet.
   * Generalisér løsningen. Hvordan får du nå mange raketter til å eksplodere?
   * Forsøk å designe et objektorientert fyrverkeri, med det du mener er et godt design. Når du får oblig2 vil du da være svært godt forberedt :-)
 
