@@ -36,3 +36,9 @@ Følg instruksjonene som om du var i Linux: ./configure, make, make install
 ```
   http://www.stroustrup.com/Programming/Graphics/
 ```
+
+En kompilerbar versjon av library med en del fixes:
+
+```
+  http://fwsnet.net/stroustrup.tar.gz
+```
