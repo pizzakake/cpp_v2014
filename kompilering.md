@@ -3,7 +3,7 @@
 På Ubuntu kan man bare:
 
 ```
-  sudo apt-get install g++ build-essential
+  sudo apt-get install g++ build-essential cmake
   sudo apt-get install libfltk1.3-dev
 ```
 
@@ -22,6 +22,14 @@ Et veldig bra GUI for git på Windows er "Github for Windows":
 ```
   http://windows.github.com/
 ```
+
+For å installere fltk, følg instruksjonene her:
+
+```
+  http://www.fltk.org/doc-1.3/intro.html
+```
+
+Følg instruksjonene som om du var i Linux: ./configure, make, make install
 
 #### Du trenger disse filene for å gjøre FLTK oppgavene:
 
