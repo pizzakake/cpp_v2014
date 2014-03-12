@@ -19,7 +19,7 @@ Oblig2 vil gå ut på å implementere fyrverkeri, basert på et klassehierarki d
 
 NB: Du må laste ned filene til Stroustrup for å få implementasjonen til bl.a. Circle og Shape:
 ```
- http://www.stroustrup.com/Programming/Graphics/
+ Se kompilering.md
 ```
 
 
