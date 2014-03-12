@@ -17,6 +17,12 @@ Oblig2 vil gå ut på å implementere fyrverkeri, basert på et klassehierarki d
   * Generalisér løsningen. Hvordan får du nå mange raketter til å eksplodere?
   * Forsøk å designe et objektorientert fyrverkeri, med det du mener er et godt design. Når du får oblig2 vil du da være svært godt forberedt :-)
 
+NB: Du må laste ned filene til Stroustrup for å få implementasjonen til bl.a. Circle og Shape:
+```
+ http://www.stroustrup.com/Programming/Graphics/
+```
+
+
 ## Uke 10: Arv og polymorfi. 
 Oppgaver og drill fra boken, kap. 14. Disse oppgavene bruker grafikkbiblioteket fra [fltk.org](http://www.fltk.org). Biblioteket fungerer for Mac, Windows og Linux, men må lastes ned fra hjemmesidene. For windows/visual studio står det en brukerveiledning i et eget appendix i boken (Appenix D s.1157), mens for Linux og Mac, må du bruke dokumentasjonen på hjemmesidene. Det er alltid litt knot å installere tredjeparts kode - og i seg selv er det en *svært nyttig* øvelse. 
 Bruk av dette biblioteket vil også være nyttig for å ha noe å sammenlikne med når vi senere skal bruke Qt, som fungerer svært anderledes. 
