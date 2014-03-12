@@ -23,7 +23,7 @@ Et veldig bra GUI for git på Windows er "Github for Windows":
   http://windows.github.com/
 ```
 
-# Implementasjonen av Circle og Shape er en egen oppgave i boka (chapter 2.6)
+#### Implementasjonen av Circle og Shape er en egen oppgave i boka (chapter 2.6)
 
 ```
   https://github.com/psholtz/C-Language/tree/master/Stroustrup-C%2B%2B/Section-02.06
