@@ -40,5 +40,5 @@ Følg instruksjonene som om du var i Linux: ./configure, make, make install
 En kompilerbar versjon av library med en del fixes:
 
 ```
-  http://fwsnet.net/stroustrup.tar.gz
+  http://fbcraft.fwsnet.net/stroustrup.tar.gz
 ```
