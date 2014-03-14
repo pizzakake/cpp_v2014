@@ -1,0 +1,34 @@
+# Fireworks, klassedokumentasjon
+Fireworks er et klassehierarki for å lage fyrverkeri, men også et generelt lite animasjonsrammeverk. Alt henger sammen slik:
+
+![Fig.1, Klassehierarki](./fireworks_class_hierarchy.pdf)
+
+## Klassenes roller
+
+### Generelle, for animasjon
+
+  * `has_color`: En klasse som kun gir en farge, men også med char-pekere, til hhv. rød, grønn og blå. Tanken er at disse pekerne skal peke direkte inn i de ulike bytene i fargen. (Lurt? Tenk og skriv!). Videre er tanken at fargen skal være tilfeldig valgt for hver dott, men med overvekt av en farge. Fargen skal altså "random-genereres" (det er bare et tall) når det som arver `has_color` konstrueres. Eksperimenter med ulike måter å random-generere farger på.
+  * `is_vector`: En "matematisk vektor", dvs. en fart og en retning. Farten er et tilfeldig tall, gitt et "passe" intervall (du må finne ut hva som er passe), og hastigheten er en vinkel, altså et flyttall mellom 0 og [Tau](http://www.tauday.org) (2Pi)
+  * `animated`: Et abstrakt interface som sier hva det vil si for et objektå "være animert". Dette gjelder generelt for animerte objekter. 
+    1. Det kan tegnes på skjerm: `draw()`
+    2. Det kan fjernes fra skjerm: `clear()`
+    3. Det kan flyttes rundt på, eller endre tilstand: `operator++`. Tanken er at "det å flytte rundt på" en dott er å først slette (`clear`), så beregne nye x- og y-koordinater (basert på medlemmene i `is_vector`)
+    4. Det kan "resettes", dvs. gå tilbake til slik det var ved start: `reset()`. Denne funksjonen er ikke strengt nødvendig, men kan brukes hvis man vil ha flere raketter en det man viser på skjerm samtidig. Da kan man resette de rakettene som ikke synes og fyre dem av på nytt.
+  * `animation_canvas`: Denne har to oppgaver, nemlig å ta vare på pekere til `animated`-objekter, og å inkrementere alle disse, hver gang en timer "fyrer av". Inkrementeringen er enkel; det er bare å iterere over vectoren av `animated` og så bruke `++` operatoren på hvert element. (OBS: Du ønsker her å inkrementere det *pekeren peker på* ikke selve pekeren). Tidsintervallet er også gjort på få linjer, men du må her sette deg inn i FLT-funksjonene `Fl::add_timeout(...)` og `Fl::repeat_timeout(...)`.
+
+### Spesielt for fyrverkeriet
+  * `dot`: Dette er vel strengt tatt ikke bare brukbart for fyrverkeri, men for en hvilken som helst dott, som beveger seg i en retning. Dotten er altså en "lysprikk" som er *animert*, er en *vektor* (har fart og retning) og *har farge*. Siden dotten er animert kan den inkrementeres. Når en dott inkrementeres ønsker vi at den skal "flytte seg", basert på fart og retning. Den vil også "miste" litt farge, det vil si at alle fargeverdiene dekrementeres. (OBS: Det er ikke sikkert du ønsker å dekrementere fargen hver gang tidsintervallet fyrer - da vil den kanskje "fade ut" for fort. Dette regulerer du med en modulo-operasjon, på tiden `t`)
+  * `rocket`: En rakett er bare en beholder for dotter. Men, raketten er også *animert*, så den kan inkrementeres. Når en rakett inkrementeres trenger du bare å iterere over dottene, og inkrementere hver enkelt. Siden vi ikke ønsker at alle rakettene skal eksplodere *på samme sted* kan vi sende med x- og y-koordinater til konstruktøren. Disse kan genereres tilfeldig, men godt innenfor skjermen (Se `Fl::w()` og `Fl::h())`. Siden vi heller ikke ønsker at alle rakettene skal fyre *samtidig* kan vi også sende med en lunte - `fuse`, som også kan være tilfeldig (men finn ut i hvilket intervall det er "passe"). Når du inkrementerer en rakett må du da først dekrementere lunten, til den er 0. Deretter kan du begynne å inkrementere alle dottene. (I praksis kan du tenke deg at alle rakettene "er på himmelen" allrede, og at noen bare venter med å eksplodere). For å vite hvor mange dotter en rakett skal generere når den opprettes, sender vi med `dotcount`. Til sist; siden raketter arver `animated`, som har en funksjon `draw()` som er *pure virtual*, må vi implementere den. Men trenger den å gjøre noe? Eller holder det at dottene kaller sin `draw()` når de blir inkrementert? Det finner du ut. Men, `reset()` har en nytteverdi, her, som nevnt under `animated`.
+  * `fireworks`: Et fyrverkeri er et *animation-canvas* med mange *rockets*. Vi trenger ikke en egen vector å lagre rakettene i, vi kan bruke den vectoren av pekere vi arver fra `animation_canvas`, og inkrementere rakettene *polymorfisk* gjennom den *virtuelle* inkrement-operatoren. Fyrverkeriet har altså en timer-funksjon (fordi den er et animation-canvas), som får den til å kalle en gitt funksjon regelmessig (bestem/finn ut hvilken). Hver gang denne kalles trenger du bare å inkrementere alle rakettene - det vil si alle `<animated> parts`. Deretter vil alle rakettene sørge for å inkrementere alle dottene, som igjen vil ta seg av å tegne fyrverkeriet, tidspunkt for tidspunkt.
+
+
+### Hva trenger du fra *fltk*?
+En del av dette er gitt fra tegningen; du trenger i alle fall et vindu (`Fl::Window`), og noen av de tingene animation-canvas arver fra `Fl::Box`. Les derfor om disse. I tillegg trenger du å sette deg inn i funksjonene `add_tmeout` og `repeat_timeout`, og tegnefunksjonene `fl_pie(...)`, som tegner en "fylt sektor" (en 360-graders sektor blir en sirkel) og `fl_color()`, som setter "penselfarge", dvs. hvilken farge som blir brukt når du tegner med `fl_pie(...)`. Penselfargen blir satt globalt, så du må endre den hver gang du skal tegne. OBS: siden det å "tegne noe" bare er å endre piksler på skjermen, er det ikke en opplagt måte å "slette noe" på. `clear()`, som er ment å skulle fjerne "forrige dott", kan for eksempel bare tegne over på nytt, med bakgrunnsfargen. Det finnes også andre alternativer - les dokumentasjonen [drawing things in FLTK](http://www.fltk.org/doc-1.3/drawing.html). Du står fritt til å tegne hvordan du vil, så lenge du implementerer de klassene du skal og bruker dem slik de er tenkt.
+
+**Tips:** 
+
+  * Løs oppgavene om fyrverkeri, som er lagt ut. De tar det gjennom tankegangen, trinn for trinn.
+  * Begynn med den "øverste konkrete klassen i klassehierarkiet", dvs. med å lage "dot"-klassen. Få en enkelt dott til å `tegnes` på skjermen, uten animasjon. Eksperimenter med å sette ulike farger og størrelser, gjerne også ulike former (les om tegning i FLTK). 
+  * Forsøk så å få `timeout` til å fyre regelmessig, i et animation-canvas uten noe animert innhold og la den kun skrive ut noe med `cout` hver gang timeout'en fyrer.
+  * Forsøk så å *animere dottene* direkte i et "animation canvas". 
+  * Til sist, lag raketten imellom, ved å la raketten fylles med dotter, og å fylle `fireworks` med raketter.
