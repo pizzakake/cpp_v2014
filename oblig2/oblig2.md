@@ -40,7 +40,7 @@ Du kan skrive all den koden du mener du trenger, men forsøk å være konsis, ut
   3. Hvis du ønsker kan du variere og eksperimentere, og la fyrverkeriet bestå av feks. stjerner, i stedet for dotter, ha ytterligere effekter som at "dottene" roterer el., men det skal være "prinsipielt det samme" fyrverkeriet.
 
 ## 2) Kortsvarsspørsmål
-Du skal svare på følgende spørsmål, i en fil `answers_to_questions.md`:
+Du skal svare på følgende spørsmål, i filen `answers_to_questions.md`:
 
   1. En del av klassene inneholder en del `protected` datamedlemmer. Er dette lurt? Nevn noen fordeler og ulemper, og hvordan dette kunne vært gjort anderledes for å unngå ulempene.
   2. Anta at vi ønsket å implementere fyrverkeriet med et annet grafikkbibliotek, `fancyGraphics (FG)`. Hva kunne vært gjort anderledes i designet for at dette skulle kunne blitt gjort enklere?
