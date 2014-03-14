@@ -1,5 +1,11 @@
 #NYHETER
 
+**14.03.2014: Oblig 2 ute!**
+
+Oblig 2 er nå lagt ut, under [oblig2](./oblig2/oblig2.md). Mappen `oblig2` består av oppgavetekst, klassedokumentasjon (tekst og PDF-figur) og alle header-filene du skal implementere. Vi kommer til å legge ut mere materiale for å hjelpe dere i gang med det praktiske rundt FLTK. 
+
+*Lykke til!*
+
 **11.03.2014: Lab i morgen og oblig 2**
 
 I følge semesterplanen kommer Oblig2 ut på fredag. Oppgaven vil være å lage fyrverkeri. Dere vil få utdelt header-filer til et lite klassehierarki, der dere skal lage implementasjonen. Fyrverkeriet dere skal ende opp med vil se ut ca. [sånn som dette](https://www.dropbox.com/s/shw2mqbf2qbjn03/fireworks1.mov). 
