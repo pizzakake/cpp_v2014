@@ -1,7 +1,5 @@
 # Fireworks, klassedokumentasjon
-Fireworks er et klassehierarki for å lage fyrverkeri, men også et generelt lite animasjonsrammeverk. Alt henger sammen slik:
-
-![Fig.1, Klassehierarki](./fireworks_class_hierarchy.pdf)
+Fireworks er et klassehierarki for å lage fyrverkeri, men også et generelt lite animasjonsrammeverk. Alt henger sammen slik du ser i [Fig.1, Klassehierarkiet](./fireworks_class_hierarchy.pdf).
 
 ## Klassenes roller
 

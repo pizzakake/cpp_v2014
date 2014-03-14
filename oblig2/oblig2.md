@@ -22,7 +22,7 @@ Obligatorisk oppgave 2: Fyrverkeri
 
 ## 1) Implementasjon av fyrverkeri
 
-I mappen for oblig2 ligger det det et ferdig designet klassehierarki for et fyrverkeri, laget i et lite animasjonsrammeverk bygget på [fltk](http://www.fltk.org). Du skal nå lage implementasjonen til dette fyrverkeriet. Du skal gjøre følgende:
+I mappen for oblig2 ligger det det et ferdig designet klassehierarki for et fyrverkeri, laget i et lite animasjonsrammeverk bygget på [fltk](http://www.fltk.org). Du skal nå lage implementasjonen til dette fyrverkeriet. Klassene er dokumentert i [klassedokumentasjonen her](./klassedokumentasjon.md). Du skal gjøre følgende:
 
   1. For alle .h-filene som trenger å implementeres (du må finne ut hvilke), må det lages en `.cpp`-fil med samme fornavn. I tillegg skal det være en fil `fireworks.cpp` som skal inneholde `main`. Denne fila skal kompileres til `fireworks` og bare opprette et vindu, gjerne i fullskjermmodus, og starte et fyrverkeri i vinduet.
   2. Du skal ikke forandre header-filene! De har svakheter, men du må jobbe med de som de er (svakhetene skal du skrive noe om i neste oppgave)
