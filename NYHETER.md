@@ -2,7 +2,11 @@
 
 **17.03.2014: Hjelp til FLTK i ubuntu**
 
-Jeg har nå lagt ut en del stoff om hvordan man bruker FLTK i ubuntu, under [ubuntu_faq.md](ubuntu_faq.md). I tillegg er det lagt ut en beskrivelse, trinn for trinn, av hvordan man lager en fungerende ubuntu-vm, med et lettkjørt desktopmiljø (lubuntu), hvordan man får inn alle kursets programmer *og fltk*. I tillegg har jeg lagt ut link til en ferdig slik VM, som kan lastes ned, for de som er lei av konfigurering. Det er også laget en mappe med et enkelt FLTK-prosjekt som bygger fint i denne VM'en. Prosjektet består bare av en fil og en Makefile, som når det er bygget åpner et vindu og tegner tre dotter. Du finner dette i mappen [fltk_basics](./fltk_basics). Lykke til!
+Jeg har nå lagt ut en del stoff om hvordan man bruker FLTK i ubuntu, under [ubuntu_faq.md](ubuntu_faq.md). I tillegg er det lagt ut en beskrivelse, trinn for trinn, av hvordan man lager en fungerende ubuntu-vm, med et lettkjørt desktopmiljø (lubuntu), hvordan man får inn alle kursets programmer *og fltk*. I tillegg har jeg lagt ut link til en ferdig slik VM, som kan lastes ned, for de som er lei av konfigurering. Det er også laget en mappe med et enkelt FLTK-prosjekt som bygger fint i denne VM'en. Prosjektet består bare av en fil og en Makefile, som når det er bygget åpner et vindu og tegner tre dotter. Du finner dette i mappen [fltk_basics](./fltk_basics). 
+
+**OBS:** Alf har laget en egen guide for å legge inn bibliotekene fra læreboken ([fyrverkeri.md](fyrverkeri.md)). Disse er *ikke nødvendige for å løse obligen og skal bare brukes for å løse oppgavene i boken*. De kan også være nyttige for å løse oppgavene om fyrverkeri, men er ikke nødvendige der heller. 
+
+Lykke til!
 
 **14.03.2014: Oblig 2 ute!**
 
