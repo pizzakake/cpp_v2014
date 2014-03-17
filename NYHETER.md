@@ -1,5 +1,9 @@
 #NYHETER
 
+**17.03.2014: Hjelp til FLTK i ubuntu**
+
+Jeg har nå lagt ut en del stoff om hvordan man bruker FLTK i ubuntu, under [ubuntu_faq.md](ubuntu_faq.md). I tillegg er det lagt ut en beskrivelse, trinn for trinn, av hvordan man lager en fungerende ubuntu-vm, med et lettkjørt desktopmiljø (lubuntu), hvordan man får inn alle kursets programmer *og fltk*. I tillegg har jeg lagt ut link til en ferdig slik VM, som kan lastes ned, for de som er lei av konfigurering. Det er også laget en mappe med et enkelt FLTK-prosjekt som bygger fint i denne VM'en. Prosjektet består bare av en fil og en Makefile, som når det er bygget åpner et vindu og tegner tre dotter. Du finner dette i mappen [fltk_basics](./fltk_basics). Lykke til!
+
 **14.03.2014: Oblig 2 ute!**
 
 Oblig 2 er nå lagt ut, under [oblig2](./oblig2/oblig2.md). Mappen `oblig2` består av oppgavetekst, klassedokumentasjon (tekst og PDF-figur) og alle header-filene du skal implementere. Vi kommer til å legge ut mere materiale for å hjelpe dere i gang med det praktiske rundt FLTK. 
