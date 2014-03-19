@@ -2,7 +2,9 @@
 
 **19.03.2014: Lab i dag**
 
-På lab i dag blir det jobbing med oblig2, Alf vil være tilstede for å hjelpe dere. For de som enda ikke har gjort oppgavene om FLTK anbefales disse. Se også forrige nyhetspost for hjelp til oppsett av FLTK.
+**Kontra:** Alf har blitt syk og kan ikke komme i dag. Selv har jeg hjemmeeksamen kl.12. Dere får hjelpe hverandre så godt dere kan, og bruke dokumentasjonen som er lagt ut. Jeg kan svare på spørsmål via e-post etter kl.12.
+
+På lab i dag blir det jobbing med oblig2, ~~Alf vil være tilstede for å hjelpe dere~~. For de som enda ikke har gjort oppgavene om FLTK anbefales disse. Se også forrige nyhetspost for hjelp til oppsett av FLTK.
 
 **OBS:** Minner om at oblig2 skal leveres i *samme repository* som oblig1. Du skal altså kun ha ett repository for kurset, og der skal det ligge en mappe for oblig1 og en for oblig2. Da slipper vi å levere inn to linker via fronter.
 
