@@ -1,5 +1,11 @@
 #NYHETER
 
+**19.03.2014: Lab i dag**
+
+På lab i dag blir det jobbing med oblig2, Alf vil være tilstede for å hjelpe dere. For de som enda ikke har gjort oppgavene om FLTK anbefales disse. Se også forrige nyhetspost for hjelp til oppsett av FLTK.
+
+**OBS:** Minner om at oblig2 skal leveres i *samme repository* som oblig1. Du skal altså kun ha ett repository for kurset, og der skal det ligge en mappe for oblig1 og en for oblig2. Da slipper vi å levere inn to linker via fronter.
+
 **17.03.2014: Hjelp til FLTK i ubuntu**
 
 Jeg har nå lagt ut en del stoff om hvordan man bruker FLTK i ubuntu, under [ubuntu_faq.md](ubuntu_faq.md). I tillegg er det lagt ut en beskrivelse, trinn for trinn, av hvordan man lager en fungerende ubuntu-vm, med et lettkjørt desktopmiljø (lubuntu), hvordan man får inn alle kursets programmer *og fltk*. I tillegg har jeg lagt ut link til en ferdig slik VM, som kan lastes ned, for de som er lei av konfigurering. Det er også laget en mappe med et enkelt FLTK-prosjekt som bygger fint i denne VM'en. Prosjektet består bare av en fil og en Makefile, som når det er bygget åpner et vindu og tegner tre dotter. Du finner dette i mappen [fltk_basics](./fltk_basics). 
