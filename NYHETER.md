@@ -1,5 +1,9 @@
 #NYHETER
 
+**22.03.2014: Ekstra lab på mandag**
+
+Vi setter opp en ekstra lab mandag 24.mars, kl. 12:30 - 16:00. Vi har bedt om å få det vanlige rommet (PH451) som er ledig da. Vi regner med det går i orden (i verste fall flytter vi til datatorget.). Jeg vil være til stede deler av tiden, Alf hele. Fokus vil være på FLTK og oblig2.
+
 **19.03.2014: Lab i dag**
 
 **Kontra:** Alf har blitt syk og kan ikke komme i dag. Selv har jeg hjemmeeksamen kl.12. Dere får hjelpe hverandre så godt dere kan, og bruke dokumentasjonen som er lagt ut. Jeg kan svare på spørsmål via e-post etter kl.12.
