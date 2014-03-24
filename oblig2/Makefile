@@ -14,6 +14,6 @@ COBJS = $(CMODS:.cpp=.o)
 all: $(COBJS)
 	$(CC) $(COBJS) $(LFLAGS) -o $(OUTPUT)
 
-clear:
+clean:
 	$(RM) $(COBJS) $(OUTPUT)
 
