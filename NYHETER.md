@@ -1,5 +1,35 @@
 #NYHETER
 
+**24.03.2014: FLTK, Makefile mm.**
+
+**FLTK og Make:** Når man skal kompilere et program som bruker FLTK må kompilatoren vite hvor FLTK-bibliotekene ligger. Hvis du bruker den ferdige ubuntu-VM'en jeg har laget, og beskrevet [her](./ubuntu_faq.md) vil det være tilstrekkelig med ett linker-argument til g++ for å få til dette; hvordan det da gjøres ser du i Makefila som ligger i mappen [fltk_basics](./fltk_basics). 
+
+Hvis du *ikke* bruker den VM'en jeg har laget, vil det variere hvor FLTK-bibliotekene ligger. FLTK har da laget et script, "fltk_config" beskrevet [her](http://www.fltk.org/doc-1.1/basics.html) som kan hjelpe deg å kompilere med riktig linking. Dette er imidlertid også litt å sette seg inn i. For å hjelpe dere har Alf laget en makefil som bruker "fltk_config", og delt den med dere. Den heter "Makefile" og ligger i mappen [oblig 2](./oblig2). Denne makefila kan dere bruke, eller evt. bare se på for å få hjelp til å lage en egen.
+
+**Anbefalt fremgangsmåte for oblig2**
+For de som fortsatt strever med å komme i gang med programmeringen av fyrverkeri, anbefaler jeg denne fremgangsmåten:
+  
+  1. Sjekk at du har installert FLTK riktig, vet å bygge og kjøre [fltk_basics](./fltk_basics)
+  2. Lag fireworks.cpp, og: 
+    * Opprett et FLTK-vindu
+    * Opprett en FL_Box direkte etter vinduet. Hvis du sender med en tekststreng til boksens konstruktør, skal du se denne teksten på skjermen. 
+    * Opprett et animation canvas i stedet for boksen. Animation-canvas tar en tekststreng som argument (const char* l), som skal sendes videre til konstruktøren til FL_Box, i konstruktøren. Denne teksten skal da vises på skjermen.
+    * I animation-canvas' draw-funksjon, forsøk å tegne sirkler med `fl_pie`. Denne tegnefunksjonen vil bare fungere inni en FLTK-widget, men siden animation-canvas arver FL_Box vil det gå bra.
+    * Når du har kommet så langt kan du flytte tegnefunksjonen inn i klassen `dot` og så opprette dotter direkte i animation-canvas'et, ved å lage animated-pekere til dem, og putte disse inn i vectoren `parts`. Animation-canvaset sin draw-funksjon skal nå i stedet for å tegne, bare inkrementere alle `parts` (dvs. dottene). Dottenes operator++ (som er prefiks-inkrementering) skal igjen kalle "draw" i dotten, som da skal resultere i at dotter blir tegnet.
+
+
+**22.03.2014: Ekstra lab på mandag**
+
+Vi setter opp en ekstra lab mandag 24.mars, kl. 12:30 - 16:00. Vi har bedt om å få det vanlige rommet (PH451) som er ledig da. Vi regner med det går i orden (i verste fall flytter vi til datatorget.). Jeg vil være til stede deler av tiden, Alf hele. Fokus vil være på FLTK og oblig2.
+
+**19.03.2014: Lab i dag**
+
+**Kontra:** Alf har blitt syk og kan ikke komme i dag. Selv har jeg hjemmeeksamen kl.12. Dere får hjelpe hverandre så godt dere kan, og bruke dokumentasjonen som er lagt ut. Jeg kan svare på spørsmål via e-post etter kl.12.
+
+På lab i dag blir det jobbing med oblig2, ~~Alf vil være tilstede for å hjelpe dere~~. For de som enda ikke har gjort oppgavene om FLTK anbefales disse. Se også forrige nyhetspost for hjelp til oppsett av FLTK.
+
+**OBS:** Minner om at oblig2 skal leveres i *samme repository* som oblig1. Du skal altså kun ha ett repository for kurset, og der skal det ligge en mappe for oblig1 og en for oblig2. Da slipper vi å levere inn to linker via fronter.
+
 **17.03.2014: Hjelp til FLTK i ubuntu**
 
 Jeg har nå lagt ut en del stoff om hvordan man bruker FLTK i ubuntu, under [ubuntu_faq.md](ubuntu_faq.md). I tillegg er det lagt ut en beskrivelse, trinn for trinn, av hvordan man lager en fungerende ubuntu-vm, med et lettkjørt desktopmiljø (lubuntu), hvordan man får inn alle kursets programmer *og fltk*. I tillegg har jeg lagt ut link til en ferdig slik VM, som kan lastes ned, for de som er lei av konfigurering. Det er også laget en mappe med et enkelt FLTK-prosjekt som bygger fint i denne VM'en. Prosjektet består bare av en fil og en Makefile, som når det er bygget åpner et vindu og tegner tre dotter. Du finner dette i mappen [fltk_basics](./fltk_basics). 
