@@ -1,5 +1,10 @@
 #NYHETER
 
+**27.03.2014: Generell utsettelse på oblig 2**:
+Det er såpass mange som har behov for utsettelse på oblig2 at jeg velger å gi en generell utsettelse til alle. Ny frist er *onsdag 02.04.2014 kl. 23:59*. Dette gjelder alle, men for dere som blir ferdige før fristen er det naturligvis bare å committe til github i morgen. Jeg har ingen egen eksamen førstkommende onsdag så jeg vil være tilstede på lab for å hjelpe de som trenger det med innspurten.
+
+Lykke til!
+
 **24.03.2014: FLTK, Makefile mm.**
 
 **FLTK og Make:** Når man skal kompilere et program som bruker FLTK må kompilatoren vite hvor FLTK-bibliotekene ligger. Hvis du bruker den ferdige ubuntu-VM'en jeg har laget, og beskrevet [her](./ubuntu_faq.md) vil det være tilstrekkelig med ett linker-argument til g++ for å få til dette; hvordan det da gjøres ser du i Makefila som ligger i mappen [fltk_basics](./fltk_basics). 
