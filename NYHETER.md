@@ -3,6 +3,8 @@
 **28.03.2014: Grupper til prosjektoppgave**:
 Prosjektoppgaven er nå lagt ut under [prosjektoppgave](./prosjektoppgave). Les oppgaven, dann grupper og opprett et nytt github-repository for prosjektet. Der skal dere legge ut et utkast til prosjektbeskrivelse innen neste fredag. Utkastet er ikke bindende, og det er ikke meningen at arbeidet skal starte før uken etter, men vi trenger tid til å gå igjennom forslagene for å kunne godkjenne dem, evt. komme med tilbakemeldinger, tips eller råd.
 
+**PS:** Hvis du ikke har noen å være på gruppe med, men ikke ønsker å jobbe alene, send meg e-post! 
+
 Ellers er dagens forelesningsnotater lagt ut, med informasjon om prøven, samt noen viktige patterns/idiomer. 
 
 God helg!
