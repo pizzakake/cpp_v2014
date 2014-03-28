@@ -1,5 +1,12 @@
 #NYHETER
 
+**28.03.2014: Grupper til prosjektoppgave**:
+Prosjektoppgaven er nå lagt ut under [prosjektoppgave](./prosjektoppgave). Les oppgaven, dann grupper og opprett et nytt github-repository for prosjektet. Der skal dere legge ut et utkast til prosjektbeskrivelse innen neste fredag. Utkastet er ikke bindende, og det er ikke meningen at arbeidet skal starte før uken etter, men vi trenger tid til å gå igjennom forslagene for å kunne godkjenne dem, evt. komme med tilbakemeldinger, tips eller råd.
+
+Ellers er dagens forelesningsnotater lagt ut, med informasjon om prøven, samt noen viktige patterns/idiomer. 
+
+God helg!
+
 **27.03.2014: Generell utsettelse på oblig 2**:
 Det er såpass mange som har behov for utsettelse på oblig2 at jeg velger å gi en generell utsettelse til alle. Ny frist er *onsdag 02.04.2014 kl. 23:59*. Dette gjelder alle, men for dere som blir ferdige før fristen er det naturligvis bare å committe til github i morgen. Jeg har ingen egen eksamen førstkommende onsdag så jeg vil være tilstede på lab for å hjelpe de som trenger det med innspurten.
 
