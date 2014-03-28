@@ -43,10 +43,10 @@ Prosjektoppgave C++, vår 2014
 
   2. **Kodekvalitet**.  God og riktig utnyttelse av C++, også med vekt på tydelighet og lesbarhet. Flere abstraksjoner (funksjoner, klasser etc.) gir ofte mulighet for kortere, mer intuitivt lesbar kode. Eksempel på leselig kode;
   ```c++ 
-	if(queue->free_slots > 0)
+	if(queue->free_slots() > 0)
            queue->insert(request);
   ```
-  Her kunne vi godt hatt koden til "queue->insert" inline, og if-testen kunne vært et grisete logisk uttrykk. Men, det er mye mer leselig å bruke en medlemsfunksjon "queue->insert" og å ha en variabel "enough_space". Enda bedre; la `queue->insert` kaste en exception hvis det ikke er mer plass; da kan du bare si `queue->insert(request)` så lenge du passer på at `queue_full_exception` (el.) håndteres enten her, eller på relevant sted lenger ned i call-stacken. Poenget er at det å lese kode skal være som å lese en historie, ikke som å dekode en matematisk formel.
+  Her kunne vi godt hatt koden til "queue->insert" inline (direkte under if-testen), og if-testen kunne vært et grisete logisk uttrykk. Men, det er mye mer leselig å bruke en klasse for køen, med en medlemsfunksjon "queue->insert" og å ha en variabel medlemsfunksjon "free_slots". Enda bedre; la `queue->insert` kaste en exception hvis det ikke er mer plass; da kan du bare si `queue->insert(request)` så lenge du passer på at `queue_full_exception` (el.) håndteres enten her, eller på relevant sted lenger ned i call-stacken. Poenget er at det å lese kode skal være som å lese en historie, ikke som å dekode en matematisk formel.
 
   3. **Programdesign**. Hensiktsmessig bruk av objektorientering, flyt, algoritmer, skalerbarhet, effektivitet etc., avhengig av prosjektets helhet og designmål. God bruk av **Patterns/Idiomer** og **Gjenbrukbar kode** gir plusspoeng.
 
