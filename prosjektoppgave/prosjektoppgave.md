@@ -7,7 +7,7 @@ Prosjektoppgave C++, vår 2014
 
 ##Praktisk
 
-- link til nytt, privat Github-repo med **utkast til prosjektbeskrivelse** i, må legges i ditt eksisterende github-repo  **innen fredag 06.april kl.23:59.** *(senere innlevering spiser av tiden deres)*. Repoet skal kun være delt med meg (alfred-bratterud) og prosjektdeltakerne. Linken skal ligge i en fil `link_prosjektoppgave.txt`. Her skal det kun være én link, ingen ting annet (da kan vi automatisere)
+- link til nytt, privat Github-repo med **utkast til prosjektbeskrivelse** i, må legges i ditt eksisterende github-repo  **innen søndag 06.april kl.23:59.** *(senere innlevering spiser av tiden deres)*. Repoet skal kun være delt med meg (alfred-bratterud) og prosjektdeltakerne. Linken skal ligge i en fil `link_prosjektoppgave.txt`. Her skal det kun være én link, ingen ting annet (da kan vi automatisere)
 
 - Prosjektbeskrivelsen skal ligge i filen `prosjektbeskrivelse.md` i det *nye repoet*. I beskrivelsen må dere ha med: 
     1. Beskrivelse av hovedfunksjonaliteten  		       
