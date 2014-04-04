@@ -25,7 +25,7 @@ int main(int argc, char** argv){
   //Opprett et vindu
   Fl_Window *window=new Fl_Window(340,180, "Dots!");
   //Opprette en instans av dotbox
-  dotbox *box=new dotbox(0,0,340,180);
+  //dotbox *box=new dotbox(0,0,340,180);
 
   //Sperr vinduet for å ta inn flere widgets
   window->end();
@@ -34,6 +34,8 @@ int main(int argc, char** argv){
   window->show();
   
   //Start FLTK's event-loop (kjør appen)
-  return Fl::run();
+  Fl::run();
+  delete window;
+  return 1;
 
 }
