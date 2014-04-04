@@ -1,5 +1,13 @@
 #NYHETER
 
+**04.04.2014: Siste forelesning lagt ut:**
+Da er siste forelesning gjennomført og lagt ut. Jeg har også lagt ut Qt-koden jeg viste i forelesningen, men jeg la til en progressbar som endrer seg med antall tegn du skriver inn i tekstboksen. Jeg lot denne abonnere på signalet fra MainWindow (gjorde koblingen med click'n drag), som fyrer av hver gang teksten endres, og sender med "character count". La også til en enkel if-test for å sjekke om det var for mange tegn i boksen; hvis det er det blir teksten rød. Se [mainwindow.cpp](./f11_qt/Qt_demo1/mainwindow.cpp) for detaljer. 
+
+*Vi sees senest til presentasjon av prosjektene, men jeg vil uansett takke for et bra semester! Det har vært mange gode spørsmål og gode resultater så langt, og jeg gleder meg til å se prosjektene deres!*
+
+**PS:** For å kjøre koden, last ned og installér Qt open source-versjon, fra [qt-project.org](http://www.qt-project.org). Når dette er installert kan du dobbeltklikke på `.pro`-filen (prosjektfila) fra Qt-prosjektet i mappen [f11_qt](./f11_qt). Deretter blir du spurt om å konfigurere prosjektet (dvs. koble opp mot kompilator) noe du bare kan si OK til. Deretter, "press play".
+
+
 **28.03.2014: Grupper til prosjektoppgave**:
 Prosjektoppgaven er nå lagt ut under [prosjektoppgave](./prosjektoppgave). Les oppgaven, dann grupper og opprett et nytt github-repository for prosjektet. Der skal dere legge ut et utkast til prosjektbeskrivelse innen neste søndag. Utkastet er ikke bindende, og det er ikke meningen at arbeidet skal starte før uken etter, men vi trenger tid til å gå igjennom forslagene for å kunne godkjenne dem, evt. komme med tilbakemeldinger, tips eller råd.
 
