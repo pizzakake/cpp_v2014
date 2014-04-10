@@ -1,5 +1,21 @@
 #NYHETER
 
+**10.04.2014: Obligatorisk prøve i morgen**
+
+Som annonsert blir det en avsluttende prøve i C++ i morgen. 
+
+* **Tid:** Fredag 11.04 kl.08:30 - 10:15
+* **Sted:** PH422 og (hvis nødvendig) PH424
+
+**Retningslinjer:** 
+* Ingen hjelpemidler tillatt - men penn og papir for kladding er OK
+* Det blir ingen mulighet for pauser, pga. begrenset bemanning. 
+* Se forelesningsnotatene fra forrige fredag, for en oversikt over hva prøven går ut på.
+* Prøven er obligatorisk og vil telle på karakteren som et mappebidrag. 
+* Med mindre man har søkt og fått tilbud om et alternativt opplegg grunnet spesielle hensyn før prøven starter, er det kun gyldig sykemelding er gyldig grunn for å ikke møte. Man må da gjennomføre en ny prøve senere for å få karakter i faget.
+ 
+**Lykke til!**
+
 **04.04.2014: Siste forelesning lagt ut:**
 Da er siste forelesning gjennomført og lagt ut. Jeg har også lagt ut Qt-koden jeg viste i forelesningen, men jeg la til en progressbar som endrer seg med antall tegn du skriver inn i tekstboksen. Jeg lot denne abonnere på signalet fra MainWindow (gjorde koblingen med click'n drag), som fyrer av hver gang teksten endres, og sender med "character count". La også til en enkel if-test for å sjekke om det var for mange tegn i boksen; hvis det er det blir teksten rød. Se [mainwindow.cpp](./f11_qt/Qt_demo1/mainwindow.cpp) for detaljer. 
 
