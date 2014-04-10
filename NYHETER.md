@@ -4,6 +4,7 @@
 
 Som annonsert blir det en avsluttende prøve i C++ i morgen. 
 
+* **OBS:** Ta med legitimasjon - helst studentbevis!
 * **Tid:** Fredag 11.04 kl.08:30 - 10:15
 * **Sted:** PH422 og (hvis nødvendig) PH424
 
