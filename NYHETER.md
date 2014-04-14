@@ -8,7 +8,7 @@ Alle prosjektforslag har nå fått kommentar og godkjenning i sitt prosjektrepo.
   * **Hvis du har levert link som du skulle, men ikke har fått kommentar**: send meg e-post. Legg ved link til ditt private repo og navnet på filen der linken til prosjektet ditt ligger. 
   * **For alle prosjekter:** For å kunne kryssjekke hvem som er på hvilke grupper vil jeg nå at alle grupper også skal legge en fil med gruppemedlemmer på roten av sitt prosjektrepo. Jeg automatiserer dette, så det er litt nøye med formatering:
     * Filen skal hete `gruppemedlemmer.txt` 
-    * Det skal være en linje pr. deltaker, det står studentnummeret, etterfulgt av fullt navn, adskilt med mellomrom. Eksempel: 
+    * Det skal være en linje pr. deltaker, der det står studentnummer, etterfulgt av fullt navn, adskilt med mellomrom. Eksempel: 
 ```
 s101010 Alfred Bratterud
 s111111 Jens Stoltenberg
