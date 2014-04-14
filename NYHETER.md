@@ -1,5 +1,21 @@
 #NYHETER
 
+**14.04.2014: Prosjektforslag godkjent**
+
+Alle prosjektforslag har nå fått kommentar og godkjenning i sitt prosjektrepo. Det er fremdeles noen som ikke har levert linker i deres eksisterende repo, slik det er spesifisert i [oppgaveteksten](./prosjektoppgave/prosjektoppgave.md). Minner om at **alle** skal gjøre dette, *ikke* bare en på gruppen. Dette for at jeg skal kunne holde rede på hvem som er på hvilke grupper.
+
+  * **Hvis du ikke har levert link**: gjør det asap!
+  * **Hvis du har levert link som du skulle, men ikke har fått kommentar**: send meg e-post. Legg ved link til ditt private repo og navnet på filen der linken til prosjektet ditt ligger. 
+  * **For alle prosjektrer:** For å kunne kryssjekke hvem som er på hvilke grupper vil jeg nå at alle grupper også skal legge en fil med gruppemedlemmer på roten av sitt prosjektrepo. Jeg automatiserer dette, så det er litt nøye med formatering:
+    * Filen skal hete `gruppemedlemmer.txt` 
+    * Det skal være en linje pr. deltaker, det står studentnummeret, etterfulgt av fullt navn, adskilt med mellomrom. Eksempel: 
+```
+s101010 Alfred Bratterud
+s111111 Jens Stoltenberg
+```
+
+Lykke til med prosjektene!
+
 **10.04.2014: Obligatorisk prøve i morgen**
 
 Som annonsert blir det en avsluttende prøve i C++ i morgen. 
